@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Entry Data Pegawai</title>
+    <link rel="stylesheet" href="../css/form7.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="#" class="text-title">Data Karyawan</a>
+        <a href="#">Master Data</a>
+        <a href="#">Tambah Data</a>
+    </div>
+    
+    <h1>Form Entry Data Pegawai</h1>
+    <form action="#">
+        <table>
+            <tr>
+                <td>
+                    <label for="nik">NIK</label>
+                </td>
+                <td>
+                    <input type="number" name="nik" id="nik" required>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="nama">Nama</label>
+                </td>
+                <td>
+                    <input type="text" name="nama" id="nama" required>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="tempatlahir">Tempat Lahir</label>
+                </td>
+                <td>
+                    <input type="text" name="tempatlahir" id="tempatlahir" required>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="tanggallahir">Tanggal Lahir</label>
+                </td>
+                <td>
+                    <input type="date" name="tanggallahir" id="tanggallahir" required>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="alamat">Alamat</label>
+                </td>
+                <td>
+                    <textarea name="alamat" id="alamat" cols="30" rows="4" required></textarea>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    <label for="telepon">No. Telepon</label>
+                </td>
+                <td>
+                    <input type="number" name="telepon" id="telepon" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="jabatan">Jabatan</label>
+                </td>
+                <td>
+                    <select name="jabatan" id="jabatan" required>
+                        <option value="">- Jabatan Terbaru -</option>
+                        <option value="HRD">HRD</option>
+                        <option value="PM">Project Manager</option>
+                        <option value="Engginer">Engginer</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="status">status</label>
+                </td>
+                <td>
+                    <select name="status" id="status" required>
+                        <option value="">- Status Terbaru -</option>
+                        <option value="Magang">Magang</option>
+                        <option value="Kontrak">Kontrak</option>
+                        <option value="Tetap">Tetap</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit" class="btn-blue">Simpan</button>
+                    <button type="reset" class="btn-red">Batal</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
