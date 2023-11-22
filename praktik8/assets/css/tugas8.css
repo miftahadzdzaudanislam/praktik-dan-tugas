@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+#container{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.cols{
+    flex: 3;
+}
+.content{
+    display: flex;
+    flex: 1;
+    height: 80%;
+}
+.nav{
+    background-color: pink;
+    height: auto;
+    width: 20%;
+    padding: 10px;
+}
+.header{
+    background-color: khaki;
+    padding: 10px;
+    height: 10%;
+    box-sizing: border-box;
+}
+.article{
+    background-color: beige;
+    flex: 3;
+    height: auto;
+    padding: 10px;
+}
+.aside{
+    background-color: aqua;
+    flex: 1;
+    height: auto;
+    padding: 10px;
+}
+.footer{
+    background-color: khaki;
+    padding: 10px;
+    height: 10%;
+    box-sizing: border-box;
+}
