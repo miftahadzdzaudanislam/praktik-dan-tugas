@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>RestoRamen</title>
+  <link rel="icon" href="abu.jpg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+  <style>
+    @media (max-width:768px){
+
+      #ganggu{
+        display: none;
+      }
+
+    }
+  </style>
+
+</head>
+
+<body class="p-0 m-0">
+  <!-- ======= Header ======= -->
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-secondary sticky-top shadow">
+    <div class="container">
+      <a class="navbar-brand" href="#home">
+        <p><b><span class="text-danger">Resto</span><span class="text-primary">Ramen</span></b></p>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+        <ul class="navbar-nav mb-2 mb-lg-0 breadcrumb">
+          <li class="nav-item breadcrumb-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item breadcrumb-item">
+            <a class="nav-link" href="#galeri">Galeri</a>
+          </li>
+          <li class="nav-item breadcrumb-item">
+            <a class="nav-link" href="#tentang">Tentang Kami</a>
+          </li>
+          <li class="nav-item breadcrumb-item">
+            <a class="nav-link" href="#menu">Menu</a>
+          </li>
+          <li class="nav-item breadcrumb-item">
+            <a class="nav-link" href="#staff">Staff</a>
+          </li>
+          <li class="nav-item breadcrumb-item">
+            <a class="nav-link" href="#kontak">Kontak</a>
+          </li>
+        </ul>
+      </div>
+      <a class="btn btn-primary ms-auto rounded-pill me-3" href="#pesan-tempat">Pesan Tempat</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+
+    <!-- Home -->
+    <section id="home" class="home d-flex align-items-center section-bg">
+      <div class="container mt-5">
+        <div class="row justify-content-between gy-5">
+          <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
+            <h2 data-aos="fade-up">Enjoy Your Healthy<br>Delicious Food</h2>
+            <p data-aos="fade-up" data-aos-delay="100">Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+            <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+              <a href="#pesan-tempat" class="btn btn-primary rounded-pill">Pesan Tempat</a>
+              <a href="#yt" class="btn btn-primary align-items-center rounded-pill ms-3"><i class="bi bi-play-circle"></i> <span>Lihat Video</span></a>
+            </div>
+          </div>
+          <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
+            <img src="assets/ramen/volcano_dry.png" class="img-fluid" alt="volcano_dry" data-aos="zoom-out" data-aos-delay="300">
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="border border-danger border-3 opacity-100 mb-0">
+    
+    <main id="main">
+      <!-- Carosel -->
+      <section id="galeri" class="galeri section-bg bg-body-secondary pt-4">
+        <div class="container" data-aos="fade-up">
+          <div class="section-header text-center">
+            <h2>Galeri</h2>
+            <p>Galeri<span> kami</span></p>
+          </div>
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/carosel1.jpeg" class="d-block w-100" alt="carosel1">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/carosel3.jpeg" class="d-block w-100" alt="carosel3">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/carosel4.jpeg" class="d-block w-100" alt="carosel4">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+      <hr class="border border-primary border-3 opacity-100 m-0">
+
+      <!-- ======= Tentang Kami ======= -->
+    <section id="tentang" class="tentang pt-4">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header text-center">
+          <h2>Tentang Kami</h2>
+          <p>Lihat lebih <span>Tentang Kami</span></p>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-7 position-relative about-img" id="ganggu" style="background-image: url(assets/tentang.jpeg) ;" data-aos="fade-up" data-aos-delay="150">
+            <div class="call-us d-flex flex-column align-items-center mt-4">
+              <div class="kotak bg-white p-3">
+                <h4>Pesan Tempat</h4>
+                <p>+62 8123-456-7890</p>  
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5 d-flex align-items-end p-5" data-aos="fade-up" data-aos-delay="300">
+            <div class="content ps-0 ps-lg-5">
+              <p class="fst-italic">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.
+              </p>
+              <ul>
+                <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+              </ul>
+              <p>
+                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+              </p>
+
+              <div class="position-relative mt-4">
+                <img src="assets/vid.jpeg" class="img-fluid position-relative" alt="vid">
+                <a href="#vid" class="btn btn-primary position-absolute rounded-pill btn-xl top-50 start-50 translate-middle bi bi-play-circle"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <hr class="border border-danger border-2 opacity-100 mb-0">
+
+    <!-- ======= Pilihan  Menu ======= -->
+    <section id="menu" class="menu bg-body-secondary pt-4">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header text-center">
+          <h2>Menu</h2>
+          <p>Menu<span> yang ada</span></p>
+        </div>
+
+        <!-- Kategori -->
+        <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
+
+          <li class="nav-item">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-ramen">
+              <h4>Ramen</h4>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-minuman">
+              <h4>Minuman</h4>
+            </a>
+
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-paket">
+              <h4><b>Paket Hemat</b></h4>
+            </a>
+        </ul>
+
+        <div class="tab-content" data-aos="fade-up" data-aos-delay="300">
+
+          <div class="tab-pane fade active show" id="menu-ramen">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Ramen</h3>
+            </div>
+            
+            <!-- Menu Ramen -->
+            <div class="row gy-5">
+
+              <div class="card-group">
+                <div class="card">
+                  <img src="assets/ramen/miso_chiken.png" class="card-img-top" alt="miso_chiken">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="assets/ramen/kaarge_chiken.jpeg" class="card-img-top" alt="kaarge_chiken">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="assets/ramen/curry_chicken.jpeg" class="card-img-top" alt="curry_chicken">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-group">
+                <div class="card">
+                  <img src="assets/ramen/dry_karage_chiken.jpeg" class="card-img-top" alt="dry_karage_chiken">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="assets/ramen/volcano_dry.png" class="card-img-top" alt="volcano_dry">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="menu-minuman">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Minuman</h3>
+            </div>
+
+            <!-- Menu Minuman -->
+            <div class="row gy-5">
+
+              <div class="card-group">
+                <div class="card">
+                  <img src="assets/minuman/cola.png" class="card-img-top" alt="cola">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="assets/minuman/aneka_jus.png" class="card-img-top" alt="aneka_jus">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="assets/minuman/es_kelapa.png" class="card-img-top" alt="es_kelapa">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-group">
+                <div class="card">
+                  <img src="assets/minuman/lemon_tea.png" class="card-img-top" alt="lemon_tea">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="assets/minuman/teh_botol.png" class="card-img-top" alt="teh_botol">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="assets/minuman/fruit_teapng.png" class="card-img-top" alt="fruit_tea">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="menu-paket">
+
+            <div class="tab-header text-center">
+              <p>Menu</p>
+              <h3>Paket Hemat</h3>
+            </div>
+
+            <!-- Paket Hemat -->
+            <div class="row gy-5">
+
+              <div class="card-group">
+                <div class="card">
+                  <img src="assets/paket_hemat/miso+cola.png" class="card-img-top" alt="paket 1">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="assets/paket_hemat/miso+fruit_tea.png" class="card-img-top" alt="paket 2">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="assets/paket_hemat/misoy+jus.png" class="card-img-top" alt="paket 3">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-group">
+                <div class="card">
+                  <img src="assets/paket_hemat/volcano_dry+cola.png" class="card-img-top" alt="paket 4">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="assets/paket_hemat/volcano_dry+fruit_tea.png" class="card-img-top" alt="paket 5">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="assets/paket_hemat/volcano_dry+jus.png" class="card-img-top" alt="paket 6">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="border border-primary border-3 opacity-100 m-0">
+
+    <!-- Para Staf dan Koki -->
+    <section id="staff" class="staff section-bg pt-4">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header text-center">
+          <h2>staff</h2>
+          <p>Our <span>Staff</span></p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="staff-member">
+              <div class="member-img">
+                <img src="assets/staff/pemilik.png" class="img-fluid" alt="pemilik">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4>Walter White</h4>
+                <span>Master Chef</span>
+                <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="staff-member">
+              <div class="member-img">
+                <img src="assets/staff/ceo.png" class="img-fluid" alt="ceo">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4>Walter White</h4>
+                <span>Master Chef</span>
+                <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="staff-member">
+              <div class="member-img">
+                <img src="assets/staff/chef.png" class="img-fluid" alt="chef">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4>Sarah Jhonson</h4>
+                <span>Patissier</span>
+                <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="staff-member">
+              <div class="member-img">
+                <img src="assets/staff/waiter.png" class="img-fluid" alt="waiter">
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+              <div class="member-info text-center">
+                <h4>William Anderson</h4>
+                <span>Cook</span>
+                <p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <hr class="border border-danger border-2 opacity-100 mb-0">
+
+    <!-- Pesan Tempat -->
+    <section id="pesan-tempat" class="pesan-tempat bg-body-secondary pt-4">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header text-center">
+          <h2>Pesan Tempat</h2>
+          <p>Pesan <span>Tempatmu</span> Di Sini</p>
+        </div>
+
+        <div class="row g-0">
+          <div class="col-lg-4 reservation-img" style="background-image: url(abu.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
+          <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
+            <form action="pesan-tempat.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+              <div class="row gy-4">
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" name="nama_pemesan" class="form-control" id="nama_pemesan" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="email" class="form-control" name="email_pemesan" id="email_pemesan" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <div class="validate"></div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                  <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+              </div>
+              <div class="text-center pb-4"><button type="submit">Book a Table</button></div>
+            </form>
+          </div><!-- End Reservation Form -->
+
+        </div>
+
+      </div>
+    </section>
+    <hr class="border border-primary border-2 opacity-100 m-0">
+
+    <!-- Kontak Kami -->
+    <section id="kontak" class="kontak text-center p-4">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>kontak</h2>
+          <p>Kontak<span> Kami</span></p>
+        </div>
+
+        <div class="mb-3">
+          <iframe style="border:0; width: 100%; height: 350px; border: 0;" src="#map" allowfullscreen></iframe>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-md-6">
+            <div class="info-item  d-flex align-items-center">
+              <i class="icon bi bi-map flex-shrink-0"></i>
+              <div>
+                <h3>Our Address</h3>
+                <p>A108 Adam Street, New York, NY 535022</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="info-item d-flex align-items-center">
+              <i class="icon bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Email Us</h3>
+                <p>contact@-.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="info-item  d-flex align-items-center">
+              <i class="icon bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Call Us</h3>
+                <p>+1 5589 55488 55</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="info-item  d-flex align-items-center">
+              <i class="icon bi bi-share flex-shrink-0"></i>
+              <div>
+                <h3>Opening Hours</h3>
+                <div><strong>Mon-Sat:</strong> 11AM - 23PM;
+                  <strong>Sunday:</strong> Closed
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
+          <div class="row">
+            <div class="col-xl-6 form-group">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+            </div>
+            <div class="col-xl-6 form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+          </div>
+          <div class="my-3">
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your message has been sent. Thank you!</div>
+          </div>
+          <div class="text-center"><button type="submit">Send Message</button></div>
+        </form>
+
+      </div>
+    </section>
+    <hr class="border border-danger border-2 opacity-100">
+
+    </main>
+
+    <!-- ==== Footer ==== -->
+    <footer id="footer" class="footer bg-dark border-bottom border-body text-white">
+
+      <div class="container">
+        <div class="row gy-3">
+          <div class="col-lg-3 col-md-6 d-flex">
+            <i class="bi bi-geo-alt icon"></i>
+            <div>
+              <h4>Address</h4>
+              <p>
+                A108 Adam Street <br>
+                New York, NY 535022 - US<br>
+              </p>
+            </div>
+  
+          </div>
+  
+          <div class="col-lg-3 col-md-6 footer-links d-flex">
+            <i class="bi bi-telephone icon"></i>
+            <div>
+              <h4>Reservations</h4>
+              <p>
+                <strong>Phone:</strong> +1 5589 55488 55<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 footer-links d-flex">
+            <i class="bi bi-clock icon"></i>
+            <div>
+              <h4>Opening Hours</h4>
+              <p>
+                <strong>Mon-Sat: 11AM</strong> - 23PM<br>
+                Sunday: Closed
+              </p>
+            </div>
+          </div>
+  
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Follow Us</h4>
+            <div class="social-links d-flex">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
+          </div>
+  
+        </div>
+      </div>
+  
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>Miftah</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+  
+      
+      <div id="preloader"></div>
+      <a href="#" class="scroll-top d-flex align-items-end justify-content-end"><i class="bi bi-arrow-up-short"></i></a>
+    </footer>
+  
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+  
+  </html>
