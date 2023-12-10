@@ -5,56 +5,54 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>RestoRamen</title>
-  <link rel="icon" href="abu.jpg">
+  <link rel="icon" href="assets/restoramen.ico">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
-
-  <style>
-    @media (max-width:768px){
-
-      #ganggu{
-        display: none;
-      }
-
-    }
-  </style>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body class="p-0 m-0">
   <!-- ======= Header ======= -->
   <!-- navbar -->
-  <nav class="navbar navbar-expand-lg bg-body-secondary sticky-top shadow">
+  <nav class="navbar navbar-expand-lg bg-body-secondary sticky-top shadow animate__animated animate__fadeInDown">
     <div class="container">
+  
       <a class="navbar-brand" href="#home">
-        <p><b><span class="text-danger">Resto</span><span class="text-primary">Ramen</span></b></p>
+        <b><span class="text-danger d-none d-sm-inline">Resto</span><span class="text-primary d-none d-sm-inline">Ramen</span></b>
+        <b><span class="text-danger d-inline d-sm-none">R</span><span class="text-primary d-inline d-sm-none">R</span></b>
       </a>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0 breadcrumb">
-          <li class="nav-item breadcrumb-item">
-            <a class="nav-link" href="#home">Home</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><b>Home</b></a>
           </li>
-          <li class="nav-item breadcrumb-item">
-            <a class="nav-link" href="#galeri">Galeri</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#galeri"><b>Galeri</b></a>
           </li>
-          <li class="nav-item breadcrumb-item">
-            <a class="nav-link" href="#tentang">Tentang Kami</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#tentang"><b>Tentang Kami</b></a>
           </li>
-          <li class="nav-item breadcrumb-item">
-            <a class="nav-link" href="#menu">Menu</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#menu"><b>Menu</b></a>
           </li>
-          <li class="nav-item breadcrumb-item">
-            <a class="nav-link" href="#staff">Staff</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#staff"><b>Staff</b></a>
           </li>
-          <li class="nav-item breadcrumb-item">
-            <a class="nav-link" href="#kontak">Kontak</a>
+          <li class="nav-item">
+            <a class="nav-link" href="#kontak"><b>Kontak</b></a>
           </li>
         </ul>
       </div>
-      <a class="btn btn-primary ms-auto rounded-pill me-3" href="#pesan-tempat">Pesan Tempat</a>
+
+      <div class="animate__animated animate__pulse animate__infinite me-3 ms-auto">
+        <a class="btn btn-primary ms-auto rounded-pill me-3" href="#pesan-tempat">Pesan Tempat</a>
+      </div>
+
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
+
     </div>
   </nav>
 
@@ -63,17 +61,19 @@
       <div class="container mt-5">
         <div class="row justify-content-between gy-5">
           <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
-            <h2 data-aos="fade-up">Sentuhan Jepang<br>dalam Setiap Suapan</h2>
-            <p data-aos="fade-up" data-aos-delay="100">Nikmati kelezatan ramen autentik di Ramen Delight. Dari ramen tradisional 
-              hingga kreasi modern, setiap hidangan disajikan dengan penuh perhatian. Suasana nyaman dan pelayanan prima membuat 
-              pengalaman makan Anda tak terlupakan. Temui kami di Ramen Delight dan sambut kenikmatan kuliner Jepang dalam setiap suapan!</p>
-            <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="animate__animated animate__backInLeft">
+              <h2 data-aos="fade-up">Sentuhan Jepang<br>dalam Setiap Suapan</h2>
+              <p data-aos="fade-up" data-aos-delay="100">Nikmati kelezatan ramen autentik di Ramen Delight. Dari ramen tradisional 
+                hingga kreasi modern, setiap hidangan disajikan dengan penuh perhatian. Suasana nyaman dan pelayanan prima membuat 
+                pengalaman makan Anda tak terlupakan. Temui kami di Ramen Delight dan sambut kenikmatan kuliner Jepang dalam setiap suapan!</p>
+            </div>
+            <div class="d-flex animate__animated animate__pulse animate__infinite" data-aos="fade-up" data-aos-delay="200">
               <a href="#pesan-tempat" class="btn btn-primary rounded-pill">Pesan Tempat</a>
-              <a href="#yt" class="btn btn-primary align-items-center rounded-pill ms-3"><i class="bi bi-play-circle"></i> <span>Lihat Video</span></a>
+              <a href="https://youtu.be/kaY_Mm-znVY?si=CsVSIGzOBZn5u1Ps" class="btn btn-primary align-items-center rounded-pill ms-3" target="_blank"><i class="bi bi-play-circle"></i> <span>Lihat Video</span></a>
             </div>
           </div>
-          <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
-            <img src="assets/ramen/volcano_dry.png" class="img-fluid" alt="volcano_dry" data-aos="zoom-out" data-aos-delay="300">
+          <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start animate__animated animate__tada">
+            <img src="assets/restoramen.ico" class="img-fluid shadow rounded-pill m-4" alt="volcano_dry" data-aos="zoom-out" data-aos-delay="300">
           </div>
         </div>
       </div>
@@ -85,10 +85,10 @@
       <section id="galeri" class="galeri section-bg bg-body-secondary pt-4">
         <div class="container" data-aos="fade-up">
           <div class="section-header text-center">
-            <h2>Galeri</h2>
-            <p>Galeri<span> kami</span></p>
+            <h4>GALERI</h4>
+            <h2 class="text-primary"><b>Galeri<span class="text-danger"> kami</span></b></h2>
           </div>
-          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+          <div id="carouselExampleIndicators" class="carousel slide animate__animated animate__backInUp" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -123,15 +123,15 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header text-center">
-          <h2>Tentang Kami</h2>
-          <p>Lihat lebih <span>Tentang Kami</span></p>
+          <h4>TENTANG KAMI</h4>
+          <h2 class="text-danger"><b>Lihat lebih <span class="text-primary">Tentang Kami</span></b></h2>
         </div>
 
         <div class="row gy-4">
-          <div class="col-lg-7 position-relative about-img" id="ganggu" style="background-image: url(assets/tentang.jpeg); background-size: cover; background-repeat: no-repeat; ;" data-aos="fade-up" data-aos-delay="150">
+          <div class="d-none d-md-block col-lg-7 position-relative about-img rounded" style="background-image: url(assets/tentang.jpeg); background-size: cover; background-repeat: no-repeat;" data-aos="fade-up" data-aos-delay="150">
             <div class="call-us d-flex flex-column align-items-center mt-4">
-              <div class="kotak bg-white p-3">
-                <h4>Pesan Tempat</h4>
+              <div class="kotak bg-white p-3 rounded">
+                <h4><b>Pesan Tempat</b></h4>
                 <p>+62 8123-456-7890</p>  
               </div>
             </div>
@@ -158,8 +158,8 @@
               </p>
 
               <div class="position-relative mt-4 text-center">
-                <img src="assets/vid.jpeg" class="img-fluid position-relative" alt="vid">
-                <a href="#vid" class="btn btn-primary position-absolute rounded-pill btn-xl top-50 start-50 translate-middle bi bi-play-circle"></a>
+                <img src="assets/vid.jpeg" class="img-fluid position-relative shadow rounded" alt="vid">
+                <a href="https://youtu.be/kaY_Mm-znVY?si=CsVSIGzOBZn5u1Ps" class="btn btn-primary position-absolute rounded-pill btn-xl top-50 start-50 translate-middle bi bi-play-circle" target="_blank"></a>
               </div>
             </div>
           </div>
@@ -167,32 +167,32 @@
         
       </div>
     </section>
-    <hr class="border border-danger border-2 opacity-100 mb-0">
+    <hr class="border border-danger border-3 opacity-100 mb-0">
 
     <!-- ======= Pilihan  Menu ======= -->
     <section id="menu" class="menu bg-body-secondary pt-4">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header text-center">
-          <h2>Menu</h2>
-          <p>Menu<span> yang ada</span></p>
+          <h4>MENU</h4>
+          <h2 class="text-primary"><b>Menu yang<span class="text-danger"> Tersedia</span></b></h2>
         </div>
 
         <!-- Kategori -->
         <ul class="nav nav-tabs d-flex justify-content-center" data-aos="fade-up" data-aos-delay="200">
 
-          <li class="nav-item">
+          <li class="nav-item shadow">
             <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#menu-ramen">
               <h4>Ramen</h4>
             </a>
           </li>
 
-          <li class="nav-item">
+          <li class="nav-item shadow">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-minuman">
               <h4>Minuman</h4>
             </a>
 
-          <li class="nav-item">
+          <li class="nav-item shadow">
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#menu-paket">
               <h4><b>Paket Hemat</b></h4>
             </a>
@@ -214,22 +214,26 @@
                 <div class="card">
                   <img src="assets/ramen/miso_chiken.jpg" class="card-img-top" alt="miso_chiken">
                   <div class="card-body">
-                    <h5 class="card-title">Miso Chicken</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h3 class="card-title">Chicken Miso Ramen</h3>
+                    <h5 class="harga">Rp 40.000,00</h5>
+                    <p class="card-text">Ramen lembut, daging ayam gurih, dan kuah miso kaya menciptakan paduan lezat. Dihadirkan dengan sayuran segar 
+                      dan bawang hijau, hidangan ini menggoda selera dengan cita rasa hangat dan memuaskan.</p>
                   </div>
                 </div>
                 <div class="card">
                   <img src="assets/ramen/karaage_chiken.jpeg" class="card-img-top" alt="karaage_chiken">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <h3 class="card-title">Karage Ramen</h3>
+                    <h5 class="harga">Rp 40.000,00</h5>
+                    <p class="card-text">Ayam goreng karaage yang renyah bertemu dengan ramen lembut dalam satu mangkuk. Kuah kaya rasa, sayuran segar, dan bumbu meresap, menciptakan hidangan ramen yang memikat selera.</p>
                   </div>
                 </div>
                 <div class="card">
                   <img src="assets/ramen/curry_chicken.jpeg" class="card-img-top" alt="curry_chicken">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <h3 class="card-title">Chicken Curry Ramen</h3>
+                    <h5 class="harga">Rp 45.000,00</h5>
+                    <p class="card-text"> Ramen lembut disajikan dengan potongan ayam berkuah kari yang lezat. Kombinasi cita rasa ayam dan rempah kari menciptakan pengalaman hidangan yang kaya dan memuaskan.</p>
                   </div>
                 </div>
               </div>
@@ -238,15 +242,19 @@
                 <div class="card">
                   <img src="assets/ramen/dry_karage_chicken.jpg" class="card-img-top" alt="dry_karage_chiken">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h3 class="card-title">Karaage Dry Ramen</h3>
+                    <h5 class="harga">Rp 35.000,00</h5>
+                    <p class="card-text"> Ramen kering dengan karaage, menciptakan paduan unik dari rasa renyah dan lembut. Potongan ayam goreng 
+                      karaage disajikan di atas ramen, diberi taburan bumbu khusus yang memberikan cita rasa mendalam.</p>
                   </div>
                 </div>
                 <div class="card">
                   <img src="assets/ramen/volcano_dry.jpg" class="card-img-top" alt="volcano_dry">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <h3 class="card-title">Volcano Dry Ramen</h3>
+                    <h5 class="harga">Rp 39.000,00</h5>
+                    <p class="card-text">Ramen kering dengan sentuhan "volcano". Paduan eksplosif rasa pedas dan gurih menyelimuti potongan ayam dan 
+                      ramen. Pengalaman unik yang memukau dengan kelezatan kering yang memanjakan lidah.</p>
                   </div>
                 </div>
               </div>
@@ -267,22 +275,30 @@
                 <div class="card">
                   <img src="assets/minuman/cola.jpg" class="card-img-top" alt="cola">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h3 class="card-title">Cola</h3>
+                    <h5 class="harga">Rp 15.000,00</h5>
+                    <p class="card-text">Minuman berkarbonasi yang segar dengan rasa khas manis dan asam. Gelembung berkarbonasi yang menyegarkan menemani setiap tegukan.</p>
+                    <ul>
+                      <li>Coca Cola</li>
+                      <li>Fanta</li>
+                      <li>Sprite</li>
+                    </ul>
                   </div>
                 </div>
                 <div class="card">
                   <img src="assets/minuman/aneka_jus.jpg" class="card-img-top" alt="aneka_jus">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <h3 class="card-title">Aneka Jus</h3>
+                    <h5 class="harga">Rp 15.000,00</h5>
+                    <p class="card-text">Pilihan segar dengan beragam rasa buah yang menyegarkan. Setiap gelasnya penuh dengan kebaikan vitamin dan kelezatan alami.</p>
                   </div>
                 </div>
                 <div class="card">
                   <img src="assets/minuman/es_kelapa.jpg" class="card-img-top" alt="es_kelapa">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <h3 class="card-title">Es Kelapa</h3>
+                    <h5 class="harga">Rp 13.000,00</h5>
+                    <p class="card-text">Minuman segar dengan kelembutan dan kelezatan es kelapa. Cairan manis alami dari kelapa segar, disajikan dalam gelas yang dipenuhi es serut.</p>
                   </div>
                 </div>
               </div>
@@ -291,22 +307,25 @@
                 <div class="card">
                   <img src="assets/minuman/lemon_tea.jpg" class="card-img-top" alt="lemon_tea">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h3 class="card-title">Lemon Tea</h3>
+                    <h5 class="harga">Rp 10.000,00</h5>
+                    <p class="card-text">Paduan segar antara teh lezat dan aroma citrus dari lemon.</p>
                   </div>
                 </div>
                 <div class="card">
                   <img src="assets/minuman/teh_botol.jpg" class="card-img-top" alt="teh_botol">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <h3 class="card-title">Teh Botol</h3>
+                    <h5 class="harga">Rp 6.000,00</h5>
+                    <p class="card-text">Minuman teh siap minum dalam botol praktis, memberikan kelezatan teh khas Sosro dalam setiap tegukan.</p>
                   </div>
                 </div>
                 <div class="card">
                   <img src="assets/minuman/fruit_teapng.jpg" class="card-img-top" alt="fruit_tea">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <h3 class="card-title">Fruit Tea</h3>
+                    <h5 class="harga">Rp 6.000,00</h5>
+                    <p class="card-text">Minuman teh buah yang menyegarkan dengan paduan unik rasa teh dan aroma buah segar. Setiap tegukan menghadirkan kombinasi lezat antara kehangatan teh dan keasaman manis buah-buahan.</p>
                   </div>
                 </div>
               </div>
@@ -328,22 +347,25 @@
                 <div class="card">
                   <img src="assets/paket_hemat/miso+cola.png" class="card-img-top" alt="paket 1">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h3 class="card-title">Paket 1</h3>
+                    <h5 class="harga">Rp 50.000,00</h5>
+                    <p class="card-text">Miso Chicken Ramen + Cola</p>
                   </div>
                 </div>
                 <div class="card">
                   <img src="assets/paket_hemat/miso+fruit_tea.png" class="card-img-top" alt="paket 2">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <h3 class="card-title">Paket 2</h3>
+                    <h5 class="harga">Rp 43.000,00</h5>
+                    <p class="card-text">Miso Chicken Ramen + Fruit tea.</p>
                   </div>
                 </div>
                 <div class="card">
                   <img src="assets/paket_hemat/misoy+jus.png" class="card-img-top" alt="paket 3">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <h3 class="card-title">Paket 3</h3>
+                    <h5 class="harga">Rp 50.000,00</h5>
+                    <p class="card-text">Miso Chicken Ramen + Aneka Jus.</p>
                   </div>
                 </div>
               </div>
@@ -352,22 +374,25 @@
                 <div class="card">
                   <img src="assets/paket_hemat/volcano_dry+cola.png" class="card-img-top" alt="paket 4">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <h3 class="card-title">Paket 4</h3>
+                    <h5 class="harga">Rp 48.000,00</h5>
+                    <p class="card-text">Volcano Dry Ramen + Cola.</p>
                   </div>
                 </div>
                 <div class="card">
                   <img src="assets/paket_hemat/volcano_dry+fruit_tea.png" class="card-img-top" alt="paket 5">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                    <h3 class="card-title">Paket 5</h3>
+                    <h5 class="harga">Rp 43.000,00</h5>
+                    <p class="card-text">Volcano Dry Ramen + Fruit Tea.</p>
                   </div>
                 </div>
                 <div class="card">
                   <img src="assets/paket_hemat/volcano_dry+jus.png" class="card-img-top" alt="paket 6">
                   <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                    <h3 class="card-title">Paket 6</h3>
+                    <h5 class="harga">Rp 48.000,00</h5>
+                    <p class="card-text">Volcano Dry Ramen + Aneka Jus.</p>
                   </div>
                 </div>
               </div>
@@ -383,8 +408,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-header text-center">
-          <h2>Staff</h2>
-          <p>Staff <span>Kami</span></p>
+          <h4>STAFF</h4>
+          <h2 class="text-danger"><b>Staff <span class="text-primary">Kami</span></b></h2>
         </div>
 
         <div class="row gy-4">
@@ -393,17 +418,19 @@
             <div class="staff-member d-flex flex-column align-items-center">
               <div class="member-img">
                 <img src="assets/staff/pemilik.png" class="img-fluid" alt="pemilik">
-                <div class="social d-flex flex-row justify-content-evenly align-items-center">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                <div class="social d-flex flex-row justify-content-evenly align-items-center py-3">
+                  <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://www.facebook.com/?_rdr" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info text-center">
-                <h4>Walter White</h4>
-                <span>Master Chef</span>
-                <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+                <div class="bg-info p-2 rounded-pill">
+                  <h4>Alan Ardianto</h4>
+                  <p class="text-danger mb-2"><b>Pemilik Restoran</b></p>
+                </div>
+                <p>Alan Ardianto, pemilik perusahaan, adalah pemimpin dinamis dengan fokus inovatif. Keahlian dan semangatnya mendorong keberhasilan, membimbing tim menuju pencapaian prestasi. Dalam peran kepemimpinnya, Alan memberikan inspirasi yang kuat dan komitmen untuk terus tumbuh dan berkembang.</p>
               </div>
             </div>
           </div>
@@ -412,17 +439,19 @@
             <div class="staff-member d-flex flex-column align-items-center">
               <div class="member-img">
                 <img src="assets/staff/ceo.png" class="img-fluid" alt="ceo">
-                <div class="social d-flex flex-row justify-content-evenly align-items-center">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                <div class="social d-flex flex-row justify-content-evenly align-items-center py-3">
+                  <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://www.facebook.com/?_rdr" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info text-center">
-                <h4>Walter White</h4>
-                <span>Master Chef</span>
-                <p>Velit aut quia fugit et et. Dolorum ea voluptate vel tempore tenetur ipsa quae aut. Ipsum exercitationem iure minima enim corporis et voluptate.</p>
+                <div class="bg-warning p-2 rounded-pill">
+                  <h4>Rizki Pratama</h4>
+                  <p class="text-primary mb-2"><b>CEO</b></p>
+                </div>
+                <p>Rizki Pratama, CEO yang visioner dan energik, membawa semangat kepemimpinan dan keberanian ke dalam perusahaan ini. Dengan keputusan cerdas dan latar belakang manajemen yang kuat, Rizki memimpin timnya dengan integritas dan kesuksesan.</p>
               </div>
             </div>
           </div>
@@ -431,17 +460,19 @@
             <div class="staff-member d-flex flex-column align-items-center">
               <div class="member-img">
                 <img src="assets/staff/chef.png" class="img-fluid" alt="chef">
-                <div class="social d-flex flex-row justify-content-evenly align-items-center">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                <div class="social d-flex flex-row justify-content-evenly align-items-center py-3">
+                  <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://www.facebook.com/?_rdr" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info text-center">
-                <h4>Sarah Jhonson</h4>
-                <span>Patissier</span>
-                <p>Quo esse repellendus quia id. Est eum et accusantium pariatur fugit nihil minima suscipit corporis. Voluptate sed quas reiciendis animi neque sapiente.</p>
+                <div class="bg-info p-2 rounded-pill">
+                  <h4>Chef Takashi Okamoto</h4>
+                  <p class="text-danger mb-2"><b>Master Chef</b></p>
+                </div>
+                <p>Chef Takashi Okamoto, maestro kuliner yang membawa keahlian dan kreativitasnya ke puncak cita rasa. Dengan pengalaman yang kaya, Chef Takashi menciptakan pengalaman kuliner yang mendalam, menghadirkan hidangan-hidangan istimewa yang memanjakan lidah dan merayakan keunikan setiap bahan.</p>
               </div>
             </div>
           </div>
@@ -449,18 +480,20 @@
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="300">
             <div class="staff-member d-flex flex-column align-items-center">
               <div class="member-img">
-                <img src="assets/staff/waiter.png" class="img-fluid" alt="waiter">
-                <div class="social d-flex flex-row justify-content-evenly align-items-center">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                <img src="assets/staff/cheframen.png" class="img-fluid" alt="chef">
+                <div class="social d-flex flex-row justify-content-evenly align-items-center py-3">
+                  <a href="https://twitter.com/" target="_blank"><i class="bi bi-twitter-x"></i></a>
+                  <a href="https://www.facebook.com/?_rdr" target="_blank"><i class="bi bi-facebook"></i></a>
+                  <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+                  <a href="https://www.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info text-center">
-                <h4>William Anderson</h4>
-                <span>Cook</span>
-                <p>Vero omnis enim consequatur. Voluptas consectetur unde qui molestiae deserunt. Voluptates enim aut architecto porro aspernatur molestiae modi.</p>
+                <div class="bg-warning p-2 rounded-pill">
+                  <h4>Chef Hiroshi</h4>
+                  <p class="text-primary mb-2"><b>Chef</b></p>
+                </div>
+                <p>Chef Hiroshi, ahli kuliner yang penuh kreativitas, menghadirkan keajaiban rasa ke setiap hidangan. Dedikasinya terhadap seni kuliner menciptakan pengalaman unik yang memanjakan lidah dan menggambarkan keindahan cita rasa Jepang.</p>
               </div>
             </div>
           </div>
@@ -469,151 +502,151 @@
 
       </div>
     </section>
-    <hr class="border border-danger border-2 opacity-100 mb-0">
+    <hr class="border border-danger border-3 opacity-100 mb-0">
 
     <!-- Pesan Tempat -->
     <section id="pesan-tempat" class="pesan-tempat bg-body-secondary pt-4">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header text-center">
-          <h2>Pesan Tempat</h2>
-          <p>Pesan <span>Tempatmu</span> Di Sini</p>
+          <h2><b>PESAN TEMPAT</b></h2>
+          <p class="text-primary"><b>Pesan <span class="text-danger">Tempatmu</span> Di Sini</b></p>
         </div>
 
         <div class="row g-0">
-          <div class="col-lg-4 reservation-img" style="background-image: url(abu.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
-          <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
-            <form action="pesan-tempat.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+          <div class="d-none d-md-block col-lg-4 reservation-img rounded" style="background-image: url(assets/tentang.jpeg); background-size: cover; background-repeat: no-repeat;" data-aos="zoom-out" data-aos-delay="200"></div>
+          <div class="col-lg-8 d-flex align-items-center reservation-form-bg ps-3">
+            <form action="pesan-tempat.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
               <div class="row gy-4">
                 <div class="col-lg-4 col-md-6">
-                  <input type="text" name="nama_pemesan" class="form-control" id="nama_pemesan" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <input type="text" name="nama_pemesan" class="form-control" id="nama_pemesan" placeholder="Nama" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
                   <div class="validate"></div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                  <input type="email" class="form-control" name="email_pemesan" id="email_pemesan" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                  <input type="email" name="email_pemesan" class="form-control" id="email_pemesan" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" required>
                   <div class="validate"></div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <input type="number" name="phone" class="form-control" id="phone" placeholder="Nomor Telepon" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
                   <div class="validate"></div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                  <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <input type="date" name="date" class="form-control" id="date" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
                   <div class="validate"></div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                  <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                  <input type="time" name="time" class="form-control" id="time" data-rule="minlen:4" data-msg="Please enter at least 4 chars" required>
                   <div class="validate"></div>
                 </div>
                 <div class="col-lg-4 col-md-6">
-                  <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
+                  <input type="number" name="people" class="form-control" id="people" placeholder="Jumlah Orang" data-rule="minlen:1" data-msg="Please enter at least 1 chars" required>
                   <div class="validate"></div>
                 </div>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                <textarea class="form-control" name="message" rows="5" placeholder="Tulis Pesan"></textarea>
                 <div class="validate"></div>
               </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
+              <div class="mb-3 d-flex text-center">
                 <div class="error-message"></div>
-                <div class="sent-message">Your booking request was sent. We will call back or send an Email to confirm your reservation. Thank you!</div>
+                <div class="sent-message mt-2">Permintaan pemesanan Anda akan dikirim. Dimohon untuk mengecek kembali data anda.Kami akan menelepon kembali atau mengirim Email untuk mengonfirmasi data Anda. Terima kasih!</div>
               </div>
-              <div class="text-center pb-4"><button type="submit">Book a Table</button></div>
+              <div class="text-center pb-4"><button type="submit" class="btn bg-primary text-white">Pesan Tempat</button></div>
             </form>
-          </div><!-- End Reservation Form -->
+          </div>
 
         </div>
 
       </div>
     </section>
-    <hr class="border border-primary border-2 opacity-100 m-0">
+    <hr class="border border-primary border-3 opacity-100 m-0">
 
     <!-- Kontak Kami -->
-    <section id="kontak" class="kontak text-center p-4">
-      <div class="container" data-aos="fade-up">
+    <section id="kontak" class="kontak text-center p-4 d-flex align-items-center">
+      <div class="container mx-auto" data-aos="fade-up">
 
-        <div class="section-header">
-          <h2>kontak</h2>
-          <p>Kontak<span> Kami</span></p>
+        <div class="section-header text-center">
+          <h5>KONTAK</h5>
+          <h2 class="text-danger"><b>Kontak<span class="text-primary"> Kami</span></b></h2>
         </div>
 
-        <div class="mb-3">
-          <iframe style="border:0; width: 100%; height: 350px; border: 0;" src="#map" allowfullscreen></iframe>
+        <div class="mb-3 rounded shadow text-center">
+          <iframe style="border:0; width: 100%; height: 350px; border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63456.25662491041!2d106.75486703361771!3d-6.26161709061156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f16c54838c2d%3A0xebaef477021b604a!2sRamen%2038%20Sanpachi%20Chaya%20Kamome!5e0!3m2!1sid!2sid!4v1702189735321!5m2!1sid!2sid" allowfullscreen></iframe>
         </div>
 
-        <div class="row gy-4">
+        <div class="row gy-4 d-flex justify-content-center">
 
           <div class="col-md-6">
-            <div class="info-item  d-flex align-items-center">
-              <i class="icon bi bi-map flex-shrink-0"></i>
+            <div class="info-item d-flex align-items-center text-center">
+              <i class="icon bi bi-map flex-shrink-0 me-4"></i>
               <div>
-                <h3>Our Address</h3>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <h3>Alamat Kami</h3>
+                <p>Jln. Jalan, Depok, No. 99</p>
               </div>
             </div>
           </div>
 
           <div class="col-md-6">
-            <div class="info-item d-flex align-items-center">
-              <i class="icon bi bi-envelope flex-shrink-0"></i>
+            <div class="info-item d-flex align-items-center text-center">
+              <i class="icon bi bi-envelope flex-shrink-0 me-4"></i>
               <div>
-                <h3>Email Us</h3>
-                <p>contact@-.com</p>
+                <h3>Email Kami</h3>
+                <p>restoramen@gmail.com</p>
               </div>
             </div>
           </div>
 
           <div class="col-md-6">
-            <div class="info-item  d-flex align-items-center">
-              <i class="icon bi bi-telephone flex-shrink-0"></i>
+            <div class="info-item d-flex align-items-center text-center">
+              <i class="icon bi bi-telephone flex-shrink-0 me-4"></i>
               <div>
-                <h3>Call Us</h3>
-                <p>+1 5589 55488 55</p>
+                <h3>Hubungi Kami</h3>
+                <p>+62 8123 4567 890</p>
               </div>
             </div>
           </div>
 
           <div class="col-md-6">
-            <div class="info-item  d-flex align-items-center">
-              <i class="icon bi bi-share flex-shrink-0"></i>
+            <div class="info-item d-flex align-items-center text-center">
+              <i class="icon bi bi-clock flex-shrink-0 me-4"></i>
               <div>
-                <h3>Opening Hours</h3>
-                <div><strong>Mon-Sat:</strong> 11AM - 23PM;
-                  <strong>Sunday:</strong> Closed
-                </div>
+                <h3>Jadwal Buka</h3>
+                <p>
+                  <strong>Senin-Jumat: 9.00</strong> - 22.00<br>
+                  <strong>Sabtu & Minggu:</strong> Tutup
+                </p>
               </div>
             </div>
           </div>
 
         </div>
 
-        <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
-          <div class="row">
-            <div class="col-xl-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+        <form action="forms/contact.php" method="post" class="php-email-form p-3 p-md-4 shadow">
+          <div class="row justify-content-between">
+            <div class="col-xl-6 form-group pb-3">
+              <input type="text" name="name" class="form-control shadow border-dark" id="name" placeholder="Nama" required>
             </div>
-            <div class="col-xl-6 form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+            <div class="col-xl-6 form-group pb-3">
+              <input type="email" name="email" class="form-control shadow border-dark" id="email" placeholder="Email" required>
             </div>
           </div>
-          <div class="form-group">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+          <div class="form-group pb-3">
+            <input type="text" name="subject" class="form-control shadow border-dark" id="subject" placeholder="Subjek" required>
           </div>
-          <div class="form-group">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+          <div class="form-group pb-3">
+            <textarea name="message" class="form-control shadow border-dark" rows="5" placeholder="Tulis Pesan" required></textarea>
           </div>
           <div class="my-3">
-            <div class="loading">Loading</div>
+            <div class="loading">Loading...</div>
             <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
+            <div class="sent-message">Pesanmu akan segera dikirim. Terimakasih!</div>
           </div>
-          <div class="text-center"><button type="submit">Send Message</button></div>
+          <div class="text-center"><button type="submit" class="btn bg-danger text-white">Pesan Tempat</button></div>
         </form>
 
       </div>
     </section>
-    <hr class="border border-danger border-2 opacity-100">
+    <hr class="border border-danger border-3 opacity-100">
 
     </main>
 
@@ -623,64 +656,64 @@
       <div class="container">
         <div class="row gy-3">
           <div class="col-lg-3 col-md-6 d-flex">
-            <i class="bi bi-geo-alt icon"></i>
+            <i class="bi bi-geo-alt icon pe-2"></i>
             <div>
-              <h4>Address</h4>
+              <h4>Alamat</h4>
               <p>
-                A108 Adam Street <br>
-                New York, NY 535022 - US<br>
+                Jln. Jalan, <br>
+                Depok, No. 99 - Indonesia<br>
               </p>
             </div>
   
           </div>
   
           <div class="col-lg-3 col-md-6 footer-links d-flex">
-            <i class="bi bi-telephone icon"></i>
+            <i class="bi bi-telephone icon pe-2"></i>
             <div>
-              <h4>Reservations</h4>
+              <h4>Reservasi</h4>
               <p>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
+                <strong>Handpone:</strong> +62 8123 4567 890<br>
+                <strong>Email:</strong> restoramen@gmail.com<br>
               </p>
             </div>
           </div>
   
           <div class="col-lg-3 col-md-6 footer-links d-flex">
-            <i class="bi bi-clock icon"></i>
+            <i class="bi bi-clock icon pe-2"></i>
             <div>
-              <h4>Opening Hours</h4>
+              <h4>Jadwal Buka</h4>
               <p>
-                <strong>Mon-Sat: 11AM</strong> - 23PM<br>
-                Sunday: Closed
+                <strong>Senin-Jumat: 9.00</strong> - 22.00<br>
+                <strong>Sabtu & Minggu:</strong> Tutup
               </p>
             </div>
           </div>
   
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Follow Us</h4>
+            <h4>Follow Kami</h4>
             <div class="social-links d-flex">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+              <a href="https://twitter.com/" target="_blank" class="twitter pe-2"><i class="bi bi-twitter-x"></i></a>
+              <a href="https://www.facebook.com/?_rdr" target="_blank" class="facebook pe-2"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/" target="_blank" class="instagram pe-2"><i class="bi bi-instagram"></i></a>
+              <a href="https://www.linkedin.com/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
             </div>
           </div>
   
         </div>
       </div>
   
-      <div class="container">
+      <div class="container text-center p-4">
         <div class="copyright">
           &copy; Copyright <strong><span>Miftah</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+          Designed by <b>Miftah</b>
         </div>
       </div>
   
-      
-      <div id="preloader"></div>
-      <a href="#" class="scroll-top d-flex align-items-end justify-content-end"><i class="bi bi-arrow-up-short"></i></a>
+      <a href="#" class="scroll-top d-flex align-items-end justify-content-end rounded-pill p-4 fixed-bottom">
+        <i class="bi bi-arrow-up-circle-fill display-4"></i>
+      </a>
     </footer>
   
     
