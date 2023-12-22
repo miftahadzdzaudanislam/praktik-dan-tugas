@@ -6,6 +6,12 @@ function kirim(){
     let tujuan = document.getElementById('tujuan').value;
     let tiket = document.getElementById('tiket').value;
 
+    document.getElementById('pelanggan').style.borderColor = '';
+    document.getElementById('email').style.borderColor = '';
+    document.getElementById('waktu').style.borderColor = '';
+    document.getElementById('tujuan').style.borderColor = '';
+    document.getElementById('tiket').style.borderColor = '';
+
     // error
     let errornama = '';
     let erroremail = '';
@@ -16,17 +22,23 @@ function kirim(){
     // kondisi
     if (namamu == ''){
         errornama = 'Harap isi nama anda';
+        document.getElementById('pelanggan').style.borderColor = 'red';
     }if (emailmu == ''){
-        erroremail = 'Harap isi email anda'
+        erroremail = 'Harap isi email anda';
+        document.getElementById('email').style.borderColor = 'red'
     }else if (emailmu.indexOf("@") == -1) {
         erroremail = "Email harus ada karakter '@'";
+        document.getElementById('email').style.borderColor = 'red'
       }
     if (jam == ''){
-        errorwaktu = 'Harap tentukan waktunya'
+        errorwaktu = 'Harap tentukan waktunya';
+        document.getElementById('waktu').style.borderColor = 'red'
     }if (tujuan == ''){
-        errortujuan = 'Harap tentukan tempatnya'
+        errortujuan = 'Harap tentukan tempatnya';
+        document.getElementById('tujuan').style.borderColor = 'red'
     }if (tiket == 0 || tiket > 9){
         errortiket = 'Harap masukan jumlah tiket dari 1-9'
+        document.getElementById('tiket').style.borderColor = 'red'
     }
 
     // pesan error
@@ -43,7 +55,7 @@ function kirim(){
         let outputitem = document.createElement('div');
         outputitem.innerHTML = '<div><p>Nama: ' + namamu + '<br>Email: ' + 
         emailmu + '<br>Pukul: ' + jam + '<br>Tujuan: ' + tujuan
-        + '<br>Tiket: ' + tiket + '<br>=======================</p></div>';
+        + '<br>Tiket: ' + tiket + '<br>==========================</p></div>';
         outputdata.appendChild(outputitem);
 
         document.getElementById('pelanggan').value = '';
