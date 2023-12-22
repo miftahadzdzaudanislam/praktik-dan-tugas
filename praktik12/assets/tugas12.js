@@ -53,9 +53,9 @@ function kirim(){
         errortujuan == '' && errortiket == 0){
         let outputdata = document.getElementById('outputdata');
         let outputitem = document.createElement('div');
-        outputitem.innerHTML = '<div><p>Nama: ' + namamu + '<br>Email: ' + 
+        outputitem.innerHTML = 'Nama: ' + namamu + '<br>Email: ' + 
         emailmu + '<br>Pukul: ' + jam + '<br>Tujuan: ' + tujuan
-        + '<br>Tiket: ' + tiket + '<br>==========================</p></div>';
+        + '<br>Tiket: ' + tiket + '<br>==========================';
         outputdata.appendChild(outputitem);
 
         document.getElementById('pelanggan').value = '';
