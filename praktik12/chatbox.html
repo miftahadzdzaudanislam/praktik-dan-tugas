@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Box</title>
+</head>
+<body>
+    <div style="border: 1px solid black; width: 250px;">
+        <div id="box" style="height: 250px; overflow-y: auto;"></div>
+        <div>
+            <input type="text" id="chat" style="width: 190px;">
+            <button onclick="send()">kirim</button>
+        </div>
+    </div>
+
+    <script>
+        function send(){
+            // Tangkap elemen yang dibutuhkan
+            const box = document.getElementById('box')
+            const chat = document.getElementById('chat')
+
+            // tampilkan pesan ke box
+            box.innerHTML += chat.value + '<br>'
+
+            if(chat.value == ''){
+                alert('isi pesan terlebih dahulu')
+            }
+
+            // kosongkan input
+            chat.value = ''
+
+            box.scrollTop = box.scrollHeight
+        }
+    </script>
+</body>
+</html>

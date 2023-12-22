@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kurs Ke Rupiah</title>
+    <link rel="stylesheet" href="assets/kurskerupiah.css">
+</head>
+<body>
+    <h1>Kurs Ke Rupiah</h1>
+    <form action="#">
+        <fieldset>
+            <legend>Kurs Rupiah - Mata Uang Asing</legend>
+            <table>
+                <tr>
+                    <th><p>Masukan Nilai</p></th>
+                    <th><p>Valas</p></th>
+                    <th><p>Nilai Rupiah</p></th>
+                </tr>
+                <tr>
+                    <td><input type="number" id="nilai" onclick="kerupiah()"></td>
+                    <td>
+                        <select name="valas" id="valas">
+                            <option value="us">Dollar US</option>
+                            <option value="singa">Dollar Singapore</option>
+                            <option value="malay">Ringgit Malaysia</option>
+                            <option value="jepang">Yen Jepang</option>
+                            <option value="euro">Euro</option>
+                            <option value="arab">Riyal Arab Saudi</option>
+                        </select>
+                    </td>
+                    <td><input type="text" id="Rupiah" readonly></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    
+    <script>
+        // 9915 us
+        // 13472 singa
+        // 874 malay
+        // 120 jepang
+        // 15888 euro
+        // 3592 arab
+    </script>
+
+    <script src="assets/tugas12.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+</head>
+<body>
+    <h1>Image Picker</h1>
+    <select id="pilihGambar">
+        <option value="Danari.jpg">Danari</option>
+        <option value="Danari2.jpg">Danari2</option>
+        <option value="Elaine_Celestia.jpg">Elaine Celestia</option>
+        <option value="Muna.jpg" selected>Muna</option>
+        <option value="KJ_Blosch.jpg">KJ Blosch</option>
+    </select>
+    <br>
+    <br>
+    <img src="" id="gambar" style="width: 300px;">
+
+    <script>
+        // tangkap elemen yang dibutuhkan
+        const pilihGambar = document.getElementById('pilihGambar');
+        const gambar = document.getElementById('gambar');
+
+        // panggil fungsi ubahGambar saat tag select berubah
+        pilihGambar.addEventListener('change', ubahGambar)
+        
+        // fungsi untuk mengubah image
+        function ubahGambar(){
+            gambar.src = 'img/' + pilihGambar.value;
+        };
+
+        // panggil fungsi
+        ubahGambar()
+    </script>
+</body>
+</html>

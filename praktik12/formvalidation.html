@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <link rel="stylesheet" href="assets/validasi.css">
+</head>
+<body>
+    <div class="container">
+        <form action="#" id="validasiform">
+            <h2>Form Validation</h2>
+            <div class="isi nama">
+                <label for="pelanggan">Nama Pelanggan</label>
+                <input type="text" id="pelanggan" maxlength="30" required>
+                <span id="errornama" class="error"></span>
+            </div>
+            <div class="isi email">
+                <label for="email">Email</label>
+                <input type="email" id="email" required>
+                <span id="erroremail" class="error"></span>
+            </div>
+            <div class="isi waktu">
+                <label for="waktu">Jam Keberangkatan</label>
+                <input type="time" id="waktu" required>
+                <span id="errorwaktu" class="error"></span>
+            </div>
+            <div class="isi tujuan">
+                <label for="tujuan">Tempat Tujuan</label>
+                <select name="tujuan" id="tujuan" required>
+                    <option value="" selected disabled>- Pilih Tujuan Anda -</option>
+                    <option value="Pantai">Pantai</option>
+                    <option value="Gunung">Gunung</option>
+                    <option value="Air_terjun">Air Terjun</option>
+                </select>
+                <span id="errortujuan" class="error"></span>
+            </div>
+            <div class="isi tiket">
+                <label for="tiket">Jumlah Tiket</label>
+                <input type="number" id="tiket" maxlength="1" max="9" min="0" required>
+                <span id="errortiket" class="error"></span>
+            </div>
+            <div class="kirim">
+                <button type="button" onclick="kirim()">Kirim</button>
+            </div>
+        </form>
+    </div>
+
+    <div id="outputdata" class="output">
+        <h4>Data Pelanggan:</h4>
+        <div id="outputkonten"></div>
+    </div>
+
+    <script src="assets/tugas12.js"></script>
+</body>
+</html>
